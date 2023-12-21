@@ -1,9 +1,12 @@
 from random import randrange
 from dungeon import Rejilla, TipoCelda, Monstruo, Jugador, Movimiento, Salida, Celda
+from shared import Motor
 
 
-class Juego:
+class Juego(Motor):
+
     def __init__(self):
+        super().__init__()
         self.rejilla = Rejilla()
         self.rejilla.__set_grid__()
         self.rejilla.__set_walls__()
@@ -16,7 +19,7 @@ class Juego:
         self._set_monster__()
         self._set_exit__()
 
-    def _set_monster__(self):
+    def _set_monster__(self) -> None:
 
         rand_fila: int = randrange(self.rejilla.filas)
         rand_col: int = randrange(self.rejilla.columnas)
@@ -24,11 +27,11 @@ class Juego:
         self.monstruo = Monstruo(rand_fila, rand_col)
         self.rejilla.__set_cell_type__(rand_fila, rand_col, TipoCelda.Monstruo)
 
-    def _set_player__(self):
+    def _set_player__(self) -> None:
         self.jugador = Jugador(0, 0)
         self.rejilla.__set_cell_type__(0, 0, TipoCelda.Jugador)
 
-    def _set_exit__(self):
+    def _set_exit__(self) -> None:
         self.salida = Salida(self.rejilla.filas - 1, self.rejilla.columnas - 1)
         self.rejilla.__set_cell_type__(self.rejilla.filas - 1, self.rejilla.columnas - 1, TipoCelda.Salida)
 

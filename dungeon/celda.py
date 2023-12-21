@@ -1,5 +1,5 @@
 from dungeon.tipocelda import TipoCelda
-from common.tinta import Tinta
+from shared.tinta import Tinta
 
 
 class Celda:

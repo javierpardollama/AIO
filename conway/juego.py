@@ -1,10 +1,12 @@
 from conway import Celda, TipoCelda
 from conway.rejilla import Rejilla
 from conway.constantes import Constantes
+from shared import Motor
 
 
-class Juego:
+class Juego(Motor):
     def __init__(self):
+        super().__init__()
         self.rejilla = Rejilla()
         self.rejilla.__set_grid__()
         self.rejilla.__set_alive__()

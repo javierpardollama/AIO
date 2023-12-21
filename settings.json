@@ -1,0 +1,20 @@
+{
+  "conway":
+  {
+    "columnas":10 ,
+    "filas":10 ,
+    "vivas": 10,
+    "turnos": 10
+  },
+  "dungeon":
+  {
+    "columnas": 15,
+    "filas":7,
+    "muros":30
+  },
+  "tiktak":
+  {
+    "columnas": 3,
+    "filas": 3
+  }
+}

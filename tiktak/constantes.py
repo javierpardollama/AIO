@@ -1,2 +1,2 @@
 class Constantes:
-    TAMAÑO: int = 2
+    TAMAÑO: int = 3

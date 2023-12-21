@@ -1,5 +1,5 @@
 from conway.tipocelda import TipoCelda
-from common.tinta import Tinta
+from shared.tinta import Tinta
 from conway.constantes import  Constantes
 
 class Celda:

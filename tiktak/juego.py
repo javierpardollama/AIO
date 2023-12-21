@@ -1,10 +1,13 @@
 from random import randrange
+
+from shared import Motor
 from tiktak import (Rejilla, Constantes, Jugador,Celda)
-from common.tinta import  Tinta
+from shared.tinta import  Tinta
 
 
-class Juego:
+class Juego(Motor):
     def __init__(self):
+        super().__init__()
         self.rejilla = Rejilla()
 
     def __start__(self) -> None:

@@ -1,5 +1,5 @@
 from tiktak.jugador import Jugador
-from common.tinta import Tinta
+from shared.tinta import Tinta
 
 class Celda:
     def __init__(self, columna: int = 0, fila: int = 0, jugador: Jugador = Jugador.VACIO,
