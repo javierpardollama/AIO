@@ -1,6 +1,6 @@
 # AIO
 
-This project arose as a playground to learn the basics of the Object Oriented Programing for the Python language. It includes several basic programing challenges such us: Tik Tak Toe, Saddle Point, Dungeon Crawler, Conway's Game of Life, etc.
+This project arose as a playground to learn the basics of the Object Oriented Programing for the Python language. It includes several basic programing challenges such us: Tic Tac Toe, Saddle Point, Dungeon Crawler, Conway's Game of Life, etc.
 
 ## ARCHITECTURE
 
@@ -24,7 +24,7 @@ In this project, Dungeon Crawler itself is provided.
 
 In this project, Saddle Point itself is provided.
 
-4. [Tik Tak](https://github.com/javierpardollama/AIO/tree/main/tiktak)
+4. [Tic Tac](https://github.com/javierpardollama/AIO/tree/main/tiktak)
 
 In this project, Tik Tak Toe itself is provided.
 
